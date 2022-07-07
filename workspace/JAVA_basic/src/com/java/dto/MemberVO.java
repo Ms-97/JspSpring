@@ -111,4 +111,8 @@ public class MemberVO {
 		this.register = register;
 	}
 	
+	@Override	
+	public String toString() {
+		return this.id;
+	}
 }
