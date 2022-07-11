@@ -2,18 +2,19 @@
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
-  
+
   <configuration>
-  	<properties resource="com/java/properties/db.properties"/>
+  	<properties resource="com/java/properties/db.properties" />
   	
   	<typeAliases>
-  		<typeAlias type="java.long.String" alias="str" />
-  		<typeAlias type="java.long.Integer" alias="int" />
-  		
-  		<typeAlias type="java.long.MemberVO" alias="member" />
+  		<typeAlias type="java.lang.String" alias="str" />
+		<typeAlias type="java.lang.Integer" alias="int" />
+		
+		<typeAlias type="com.java.dto.MemberVO"  alias="member"/>
   	</typeAliases>
   	
-	<environments default="development">
+  	
+  	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
@@ -29,10 +30,16 @@
 		</environment>
 	</environments>
 	
-	
-  
+  	
+  	
   	<mappers>
-  		<mapper resource="com/java/mybatis/mappers/Member-Mapper.xml"/>
-  	</mappers>
-  
+		<mapper resource="com/java/mybatis/mappers/Member-Mapper.xml"/>
+	</mappers>
   </configuration>
+  
+  
+  
+  
+  
+  
+  
