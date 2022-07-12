@@ -23,7 +23,7 @@ public class OracleMybatisSqlSessionFactory implements SqlSessionFactory {
 
 			SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();
 
-			sqlSessionFactory = sqlSessionFactoryBuilder.build(reader);
+			sqlSessionFactory = sqlSessionFactoryBuilder.build(reader); 
 
 			reader.close();
 			
