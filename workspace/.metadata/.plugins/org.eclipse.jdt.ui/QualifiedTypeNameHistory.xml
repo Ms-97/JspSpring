@@ -4,4 +4,14 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.annotation.Resources"/>
 <fullyQualifiedTypeName name="com.java.datasource.OracleMybatisSqlSessionFactory"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.api.pipe.NextAction"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.java.basic.Input"/>
+<fullyQualifiedTypeName name="com.java.basic.Service"/>
+<fullyQualifiedTypeName name="com.java.basic.GugudanService"/>
+<fullyQualifiedTypeName name="com.java.basic.OutputBuffer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>
