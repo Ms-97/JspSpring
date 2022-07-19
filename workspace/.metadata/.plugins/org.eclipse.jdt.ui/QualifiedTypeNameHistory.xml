@@ -12,7 +12,8 @@
 <fullyQualifiedTypeName name="com.java.basic.Service"/>
 <fullyQualifiedTypeName name="com.java.basic.GugudanService"/>
 <fullyQualifiedTypeName name="com.java.basic.OutputBuffer"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.logging.SimpleFormatter"/>
 </qualifiedTypeNameHistroy>
