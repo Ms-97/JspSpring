@@ -10,13 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/calculator")
 public class CalculatorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String url = "/calculatorForm.jsp";
+        String url = "/calculatorResult2.jsp";
+        
+        request.setAttribute("result", "");
 
         request.getRequestDispatcher(url).forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String url = "/calculatorResult.jsp";
+        String url = "/calculatorResult2.jsp";
 
         String display = request.getParameter("display");
         //12+34
@@ -24,10 +26,6 @@ public class CalculatorServlet extends HttpServlet {
         int lastNum = Integer.parseInt(display.substring(3));
         String operator = display.charAt(2)+"";
 
-
-        System.out.println(firstNum);
-        System.out.println(operator);
-        System.out.println(lastNum);
 
         int result = calculate(firstNum, lastNum, operator);
 
