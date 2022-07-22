@@ -16,5 +16,4 @@
     <servlet-name>score2</servlet-name>
     <url-pattern>/score2</url-pattern>
   </servlet-mapping>
- 
 </web-app>
