@@ -23,7 +23,7 @@
 		<%-- <li>  <% out.print(Integer.parseInt((String)pageContext.getAttribute("num"))+1); %> --%>
 		<li> 산술연산 : ${num+1}</li>
 		<li> 문자열 더하기 : ${num}${message }</li>
-		<li> 비교연산 : ${num ge 3 } </li>
+		<li> 비교연산 : ${num ge 3 } </li> <%-- (ge 는 >= 라고 생각하면됨) --%>
 		<li> 유무연산 : ${empty num },${not empty requestScope.member }
 	</ul>
 	
