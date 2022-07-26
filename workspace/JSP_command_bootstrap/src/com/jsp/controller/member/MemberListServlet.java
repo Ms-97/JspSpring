@@ -15,41 +15,35 @@ import com.jsp.context.ApplicationContext;
 import com.jsp.dto.MemberVO;
 import com.jsp.service.MemberService;
 
-
 @WebServlet("/member/list")
 public class MemberListServlet extends HttpServlet {
-	
+
 	private MemberService service;
-	
+
 	{
-		Map<String,Object> container = ApplicationContext.getApplicationContext();
-		this.service = (MemberService)container.get("memberService");
+		Map<String, Object> container = ApplicationContext.getApplicationContext();
+		this.service = (MemberService) container.get("memberService");
 	}
-	
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url="/WEB-INF/views/member/list.jsp";
-		
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String url = "/WEB-INF/views/member/list.jsp";
+
 		List<MemberVO> memberList;
 		try {
 			memberList = service.getMemberList();
 			request.setAttribute("memberList", memberList);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			url="/WEB-INF/views/error/500.jsp";
+			url = "/WEB-INF/views/error/500.jsp";
 		}
-		
+
 		request.getRequestDispatcher(url).forward(request, response);
 	}
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 
 }
-
-
-
-
-
-
-
