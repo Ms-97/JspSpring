@@ -6,8 +6,6 @@
 <fullyQualifiedTypeName name="com.java.datasource.OracleMybatisSqlSessionFactory"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.ws.api.pipe.NextAction"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.java.basic.Input"/>
 <fullyQualifiedTypeName name="com.java.basic.Service"/>
 <fullyQualifiedTypeName name="com.java.basic.GugudanService"/>
@@ -16,4 +14,15 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.logging.SimpleFormatter"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.jsp.dao.MemberDAOImpl"/>
+<fullyQualifiedTypeName name="com.jsp.service.MemberServiceImpl"/>
+<fullyQualifiedTypeName name="com.jsp.dao.MemberDAO"/>
+<fullyQualifiedTypeName name="com.jsp.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
