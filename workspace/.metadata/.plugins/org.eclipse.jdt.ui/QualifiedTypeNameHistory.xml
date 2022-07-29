@@ -19,10 +19,25 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.jsp.dao.MemberDAOImpl"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberServiceImpl"/>
-<fullyQualifiedTypeName name="com.jsp.dao.MemberDAO"/>
-<fullyQualifiedTypeName name="com.jsp.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.jstl.core.Config"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
+<fullyQualifiedTypeName name="com.sun.scenario.effect.impl.sw.sse.SSERendererDelegate"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
+<fullyQualifiedTypeName name="org.w3c.dom.Document"/>
+<fullyQualifiedTypeName name="com.jsp.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="javax.xml.soap.Node"/>
+<fullyQualifiedTypeName name="org.w3c.dom.Element"/>
+<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Method"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Method"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.jsp.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
+<fullyQualifiedTypeName name="com.jsp.dao.ExtraMemberDAO"/>
 </qualifiedTypeNameHistroy>
