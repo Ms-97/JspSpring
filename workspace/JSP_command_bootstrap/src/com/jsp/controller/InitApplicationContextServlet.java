@@ -87,10 +87,10 @@ public class InitApplicationContextServlet extends HttpServlet {
 							String name = ele.getAttribute("name");
 							String ref = ele.getAttribute("ref-value");
 							
+							//System.out.printf("name = %s,ref-value=%s\n",name,ref);
+							
 							String setMethodName = "set" + name.substring(0, 1).toUpperCase() 
 									+ name.substring(1);
-							
-							//System.out.printf("name = %s,ref-value=%s\n",name,ref);
 							
 							String className = eleBean.getAttribute("class");
 							Class<?> classType = Class.forName(className);
