@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.sun.scenario.effect.impl.sw.sse.SSERendererDelegate"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
-<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
-<fullyQualifiedTypeName name="org.w3c.dom.Document"/>
 <fullyQualifiedTypeName name="javax.xml.soap.Node"/>
 <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
 <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Method"/>
@@ -20,10 +15,7 @@
 <fullyQualifiedTypeName name="java.lang.Appendable"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.RequestProcessingPolicy"/>
 <fullyQualifiedTypeName name="com.jsp.controller.HandlerMapper"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.RowBounds"/>
 <fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
 <fullyQualifiedTypeName name="com.jsp.dao.MemberDAO"/>
@@ -36,7 +28,6 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Enumeration"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
 <fullyQualifiedTypeName name="java.lang.SecurityException"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
@@ -47,17 +38,26 @@
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="sun.swing.FilePane"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
-<fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 <fullyQualifiedTypeName name="java.nio.file.attribute.FileTime"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-<fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
 <fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
 <fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
+<fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
+<fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
+<fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
+<fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
 </qualifiedTypeNameHistroy>

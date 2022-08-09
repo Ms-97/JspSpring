@@ -105,8 +105,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		               	</tr>
 		     			<c:if test="${!empty memberList }" >
 		            		<c:forEach items="${memberList }" var="member">		     						     				
-		     					 <tr>
-		            		  	   	<td></td>
+		     					 <tr  onclick="OpenWindow('detail.do?id=${member.id}','회원상세',700,800);" style="cursor:pointer;">
+		            		  	   	<td style="margin:0;padding:0;padding-top:5px;">
+		            		  	   		<span class="manPicture" data-id="${member.id }"
+		            		  	   		      style="display:block;width:40px;height:40px;margin:0 auto;"></span></td>
 		            		  	   	<td>${member.id }</td>
 				              		<td>${member.pwd }</td>
 				              		<td>${member.name }
@@ -174,6 +176,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<input type='hidden' name="searchType" value="" />
 	<input type='hidden' name="keyword" value="" />
 </form>
+ 
+ 
+  
+<script>
+window.onload=function(){
+	MemberPictureThumb('<%=request.getContextPath()%>');
+}
+</script> 
+ 
    
 <script>
 
@@ -216,6 +227,8 @@ function OpenWindow(UrlStr, WinTitle, WinWidth, WinHeight) {
 <script src="<%=request.getContextPath()%>/resources/bootstrap/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<%=request.getContextPath()%>/resources/bootstrap/dist/js/adminlte.min.js"></script>
+<!-- common.js -->
+<script src="<%=request.getContextPath()%>/resources/js/common.js"></script>
 </body>
 </html>
     
