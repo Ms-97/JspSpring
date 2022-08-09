@@ -79,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 							 	<span style="color:red;font-weight:bold;">*</span>아이디</label>	
 							<div class="col-sm-9 input-group input-group-sm">
 								<input name="id" 
-									onkeyup="this.value=this.value.replace(/[\ㄱ-ㅎㅏ-ㅣ가-힣]/g, &#39;&#39;);"
+									onkeyup="this.value=this.value.replace(/['~!@#$%^&*()_|+\-=?;:'<>\{\}\[\]\\\ㄱ-ㅎㅏ-ㅣ가-힣]/g, &#39;&#39;);"
 								type="text" class="form-control" id="id" placeholder="13글자 영문자,숫자 조합">
 								<span class="input-group-append-sm">	
 									<button type="button" onclick="idCheck_go();"  class="btn btn-info btn-sm btn-append">중복확인</button>
@@ -245,6 +245,69 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		      alert("현재 사진 업로드가 불가합니다.\n 관리자에게 연락바랍니다.");
 		    }
 		});
+	}
+	
+	
+	var checkedID ="";
+	function idCheck_go(){
+		//alert("idcheck btn click");
+		var input_ID=$('input[name="id"]');
+		if(!input_ID.val()){
+	       alert("아이디를 입력하시오");
+	       input_ID.focus();
+	       return;
+		}
+		$.ajax({
+			url : "idCheck.do?id="+input_ID.val().trim(),
+			method : "get",	
+			success : function(result){
+				if(result.toUpperCase() == "DUPLICATED"){
+			      alert("중복된 아이디 입니다.");
+			      $('input[name="id"]').focus();
+				}else{
+	              alert("사용가능한 아이디 입니다.");
+	              checkedID=input_ID.val().trim();
+	              $('input[name="id"]').val(input_ID.val().trim());	             
+	           } 
+			},
+			error:function(error){
+		       alert("시스템장애로 가입이 불가합니다.");
+		    }
+		});
+		
+	}
+	
+	function regist_go(){
+		//alert("regist btn click");
+		var uploadCheck = $('input[name="checkUpload"]').val();   
+		if(uploadCheck=="0"){
+		  alert("사진업로드는 필수 입니다");      
+		  return;
+		}
+		if(!$('input[name="id"]').val()){
+		  alert("아이디는 필수입니다.");
+		  return;
+		}
+	    if($('input[name="id"]').val()!=checkedID){
+	      alert("아이디는 중복 확인이 필요합니다.");
+	      return;
+	    }
+	    if(!$('input[name="pwd"]').val()){
+		  alert("패스워드는 필수입니다.");
+		  return;
+	    }
+	    if(!$('input[name="name"]').val()){
+		  alert("이름은 필수입니다.");
+		  return;
+		}
+	    
+	    var form = $('form[role="form"]');
+		form.attr({"method":"post",
+		     	   "action":"regist.do"
+		   		  });	   
+		form.submit();
+		   
+		
 	}
 </script>
   

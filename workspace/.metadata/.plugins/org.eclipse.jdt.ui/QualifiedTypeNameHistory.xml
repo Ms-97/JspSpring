@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.servlet.jsp.jstl.core.Config"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
 <fullyQualifiedTypeName name="com.sun.scenario.effect.impl.sw.sse.SSERendererDelegate"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
@@ -14,12 +12,10 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberServiceImpl"/>
-<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
 <fullyQualifiedTypeName name="com.jsp.dao.ExtraMemberDAO"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.jsp.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="java.lang.Appendable"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.RequestProcessingPolicy"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
+<fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 </qualifiedTypeNameHistroy>
