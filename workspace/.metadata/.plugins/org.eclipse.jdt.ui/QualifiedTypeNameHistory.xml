@@ -57,7 +57,7 @@
 <fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
 <fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
 <fullyQualifiedTypeName name="com.jsp.controller.FileUploadResolver"/>
-<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 </qualifiedTypeNameHistroy>

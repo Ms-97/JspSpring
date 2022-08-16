@@ -3,8 +3,9 @@
 
     
     
+
 <script>
-	alert('${member.name}님을 삭제했습니다. ');
+	alert('${member.name}님을 삭제했습니다.');
 	if(window.opener)window.opener.location.reload(true);
 	window.close();
-</script>
+</script>    
