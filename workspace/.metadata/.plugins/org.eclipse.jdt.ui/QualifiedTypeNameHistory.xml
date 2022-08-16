@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.w3c.dom.Element"/>
-<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Method"/>
-<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Method"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberServiceImpl"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
@@ -33,8 +29,6 @@
 <fullyQualifiedTypeName name="com.sun.xml.internal.fastinfoset.sax.Properties"/>
 <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="sun.swing.FilePane"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
@@ -47,7 +41,6 @@
 <fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
@@ -59,5 +52,12 @@
 <fullyQualifiedTypeName name="com.jsp.controller.FileUploadResolver"/>
 <fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
+<fullyQualifiedTypeName name="javax.activity.InvalidActivityException"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.javassist.NotFoundException"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
