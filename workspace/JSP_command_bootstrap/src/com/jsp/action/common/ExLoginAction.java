@@ -36,7 +36,7 @@ public class ExLoginAction implements Action {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", memberService.getMember(id));
-			session.setMaxInactiveInterval(10);
+			session.setMaxInactiveInterval(15*60);
 		
 		} catch (NotFoundIdException | InvalidPasswordException e) {
 			//e.printStackTrace();

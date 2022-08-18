@@ -11,10 +11,11 @@ public class LoginFormAction implements Action {
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String url="/common/loginForm";
 		
+
+		String retUrl = request.getParameter("retUrl");		
 		
-		String retUrl = request.getParameter("retUrl");
+		request.setAttribute("retUrl", retUrl);		
 		
-		request.setAttribute("retUrl", retUrl);
 		return url;
 	}
 	
