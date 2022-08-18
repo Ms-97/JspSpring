@@ -24,6 +24,10 @@ public class LoginAction implements Action{
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
 		
+		System.out.println("id= " +id);
+		System.out.println("pwd= " +pwd);
+		
+		
 		MemberVO member = memberService.getMember(id);
 		
 		if(member!=null) { // 아이디 존재
@@ -42,7 +46,6 @@ public class LoginAction implements Action{
 			url="/common/login_fail";
 			request.setAttribute("msg", "아이디가 일치하지 않습니다.");
 		}
-		
 		return url;
 	}
 

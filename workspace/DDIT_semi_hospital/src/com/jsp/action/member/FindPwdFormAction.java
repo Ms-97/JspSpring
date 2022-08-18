@@ -1,18 +1,16 @@
-package com.jsp.action.common;
+package com.jsp.action.member;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.jsp.action.Action;
 
-public class LoginFormAction implements Action {
+public class FindPwdFormAction implements Action{
 
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url="/common/loginForm";
-		
+		String url="/member/findPwd";
 		return url;
 	}
-	
-	
+
 }

@@ -1,7 +1,5 @@
 package com.jsp.action.common;
 
-import java.net.URLDecoder;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -26,17 +24,13 @@ public class ExLoginAction implements Action {
 		//입력
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
-		String retUrl = request.getParameter("retUrl");
-		
-		
-		if(retUrl!=null) url="redirect:"+URLDecoder.decode(retUrl,"utf-8");
 		
 		try {
 			memberService.login(id, pwd);
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", memberService.getMember(id));
-			session.setMaxInactiveInterval(15*60);
+			session.setMaxInactiveInterval(10);
 		
 		} catch (NotFoundIdException | InvalidPasswordException e) {
 			//e.printStackTrace();

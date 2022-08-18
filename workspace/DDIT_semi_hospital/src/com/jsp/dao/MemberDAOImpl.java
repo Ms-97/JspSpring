@@ -61,7 +61,7 @@ public class MemberDAOImpl implements MemberDAO{
 	public MemberVO selectMemberById(String id) throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();
 		try {			  
-			MemberVO member=session.selectOne("Member-Mapper.selectMemberById",id);			
+			MemberVO member=session.selectOne("Member-Mapper.selectMemberById",id);	
 			return member;			
 		}catch(Exception e) {
 			//에러처리

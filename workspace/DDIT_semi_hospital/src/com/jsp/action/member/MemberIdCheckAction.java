@@ -25,7 +25,6 @@ public class MemberIdCheckAction implements Action {
 		String id=request.getParameter("id");
 		String resultStr = "";
 		
-		
 		try {
 			MemberVO member = memberService.getMember(id);
 			if(member!=null) {

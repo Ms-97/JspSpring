@@ -22,7 +22,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
 <div class="login-logo">
-<h1><a><img src="resources/img/logo/logo2.png"></a></h1>
+<h1><a href="<%=request.getContextPath()%>"><img src="<%=request.getContextPath()%>/resources/img/logo/logo2.png"></a></h1>
 </div>
 <form >
 <div class="card">

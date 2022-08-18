@@ -14,6 +14,8 @@ public class LoginFormAction implements Action {
 		
 		String retUrl = request.getParameter("retUrl");
 		
+		System.out.println("가나다라마바"+retUrl);
+		
 		request.setAttribute("retUrl", retUrl);
 		return url;
 	}

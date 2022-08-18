@@ -99,11 +99,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       
       
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<%=request.getContextPath()%>" class="nav-link">로그인</a>
+        <a href="<%=request.getContextPath()%>/common/loginForm.do"  class="nav-link">로그인</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href='tosForm.jsp' onclick="window.open(this.href,'팝업창','width=500, height=800'); return false;"  class="nav-link">회원가입</a>
-  
+        <a href="<%=request.getContextPath()%>/member/tosForm.do" 
+           onclick="window.open(this.href,'팝업창','width=500, height=800'); return false;"  
+           class="nav-link">회원가입</a>
+        
         
       </li>
       
