@@ -35,7 +35,7 @@
 	</select>
 	<select id="selectMemberById" parameterType="str" resultType="member">
 		select
-		* 
+		*
 		from member
 		where id=#{id}
 	</select>
