@@ -9,7 +9,7 @@ public class MemberVO {
 	private String pwd; //패스워드
 	private String name="---"; //이름
 	private int gender; //성별
-	private int birth; //생일
+	private Date birth; //생일
 	private String email;  //이메일
 	private String phone; //전화번호
 	private String addr1;//주소
@@ -82,12 +82,13 @@ public class MemberVO {
 	public void setAuthority(int authority) {
 		this.authority = authority;
 	}
-	public int getBirth() {
+	public Date getBirth() {
 		return birth;
 	}
-	public void setBirth(int birth) {
+	public void setBirth(Date birth) {
 		this.birth = birth;
 	}
+	
 
 	
 }

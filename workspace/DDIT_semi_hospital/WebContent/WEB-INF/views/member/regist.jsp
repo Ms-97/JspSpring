@@ -11,6 +11,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
+  <link rel="icon" href="<%=request.getContextPath()%>/resources/img/header/logo2.png" type="image/x-icon" sizes="16x16">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>대덕병원 | 회원가입</title>
@@ -61,7 +62,7 @@ width : 450px;
 				<!--  <div class="register-card-body "> -->
 				
 				
-					<form role="form" class="form-horizontal" action="regist" method="post">						
+					<form role="form" class="form-horizontal" action="regist" method="post" name="reg_frm">						
 						
 						
 						
@@ -353,7 +354,7 @@ var ch_pwd = -1;
 var checkedID ="";
 function idCheck_go(){
 	//alert("idcheck btn click");
-	var input_ID=$('input[name="id"]');
+	/* var input_ID=$('input[name="id"]');
 	if(!input_ID.val()){
        alert("아이디를 입력하시오");
        input_ID.focus();
@@ -377,7 +378,7 @@ function idCheck_go(){
 	       alert("시스템장애로 가입이 불가합니다.");
 	       
 	    }
-	});
+	}); */
 	
 }
 
@@ -436,7 +437,10 @@ function regist_go(){
 		   }
 	   
 	   var form = $('form[role="form"]');
-	   form.submit();
+	      form.attr({"method":"post",
+	                 "action":"regist.do"
+	                 });      
+	      form.submit();
 }
 
 function check_pw(){  //비밀번호 확인 

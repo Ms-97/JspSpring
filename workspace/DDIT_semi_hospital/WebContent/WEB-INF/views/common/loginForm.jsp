@@ -28,7 +28,7 @@
 <div class="card">
 <div class="card-body login-card-body">
 <p class="login-box-msg"></p>
-<form action="login.do"	method="post">
+<form action="<%=request.getContextPath()%>/login.do"	method="post">
 				<input name="retUrl" value="${retUrl }" type="hidden" />
 				<div class="form-group has-feedback">
 					<input type="text" class="form-control" name="id" placeholder="아이디를 입력하세요." value="${pastID }">

@@ -22,7 +22,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
 <div class="login-logo">
-<h1><a href="<%=request.getContextPath()%>"><img src="<%=request.getContextPath()%>/resources/img/logo/logo2.png"></a></h1>
+<h1><a><img src="<%=request.getContextPath()%>/resources/img/logo/logo2.png"></a></h1>
 </div>
 
 <div class="card">
@@ -31,7 +31,7 @@
 <form action="../../index3.html" method="post">
 
 <div class="input-group mb-3">
-<input type="name" class="form-control" placeholder="아이디">
+<input type="id" name="id" class="form-control" placeholder="아이디">
 <div class="input-group-append">
 <div class="input-group-text">
 
@@ -41,7 +41,7 @@
 
 
 <div class="input-group mb-3">
-<input type="name" class="form-control" placeholder="이름">
+<input type="name" name="name" class="form-control" placeholder="이름">
 <div class="input-group-append">
 <div class="input-group-text">
 
@@ -49,7 +49,7 @@
 </div>
 </div>
 <div class="input-group mb-3">
-<input type="email" class="form-control" placeholder="이메일">
+<input type="email" name="email" class="form-control" placeholder="이메일">
 <div class="input-group-append">
 <div class="input-group-text">
 
@@ -64,7 +64,7 @@
 </div>
 
 <div class="col-12">
-<button type="submit" class="btn btn-primary btn-block">확 인</button>
+<button type="button" class="btn btn-primary btn-block" onclick="regist_go()">확 인</button>
 </div>
 
 </div>
@@ -76,8 +76,28 @@
 
 </div>
 </div>
+<script>
+function regist_go(){
 
-
+	   if(!$('input[name="id"]').val()){
+	    alert("아이디를 입력해 주세요.");
+	      return;
+	  }
+	   
+	   
+	   if(!$('input[name="name"]').val()){
+		      alert("이름을 입력해 주세요.");
+		      return;
+	   }
+	   
+		   
+	   if(!$('input[name="email"]').val()){
+	      alert("이메일을 입력해 주세요.");
+	      return;
+	   }
+}
+	   </script>
+	   
 <script src="../../plugins/jquery/jquery.min.js"></script>
 
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

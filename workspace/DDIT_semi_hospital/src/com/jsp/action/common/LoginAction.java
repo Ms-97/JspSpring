@@ -24,8 +24,6 @@ public class LoginAction implements Action{
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
 		
-		System.out.println("id= " +id);
-		System.out.println("pwd= " +pwd);
 		
 		
 		MemberVO member = memberService.getMember(id);

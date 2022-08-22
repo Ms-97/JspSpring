@@ -9,6 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
+<link rel="icon" href="<%=request.getContextPath()%>/resources/img/logo/em.png" type="image/x-icon" sizes="16x16">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>세계를 선도하는 대덕병원입니다</title>
@@ -197,6 +198,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	      <div class="row"></div>
 	      <div class="row"></div>
   	 	</div>
+  	 	
+  	 	<div id="daumRoughmapContainer1640675727956" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    
+    <script charset="UTF-8">
+    	new daum.roughmap.Lander({
+    		"timestamp" : "1640675727956",
+    		"key" : "28kye",
+    		"mapWidth" : "1000",
+    		"mapHeight" : "500"
+    	}).render();
+    </script>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
