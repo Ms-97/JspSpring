@@ -1,18 +1,15 @@
 package com.jsp.action.notice;
 
-import java.util.Map;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.jsp.action.Action;
-import com.jsp.command.Criteria;
-import com.jsp.command.CriteriaCommand;
 import com.jsp.controller.HttpRequestParameterAdapter;
+import com.jsp.dto.NoticeVO;
 import com.jsp.service.NoticeService;
 
-public class NoticeListAction implements Action {
-
+public class NoticeRegistAction implements Action {
+	
 	private NoticeService noticeService;
 	public void setNoticeService(NoticeService noticeService) {
 		this.noticeService = noticeService;
@@ -21,24 +18,20 @@ public class NoticeListAction implements Action {
 	
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url = "/notice/list";
+		String url="/notice/regist_success";
 		
+		NoticeVO notice = HttpRequestParameterAdapter.execute(request,NoticeVO.class);
 		
-		CriteriaCommand criCom 
-			= HttpRequestParameterAdapter.execute(request, CriteriaCommand.class);
-		
-		Criteria cri=criCom.toCriteria();
-		
-		
-		Map<String,Object> dataMap = noticeService.getNoticeList(cri);
-		
-		request.setAttribute("dataMap",dataMap);
-		
+		noticeService.regist(notice);
 		
 		return url;
 	}
 
 }
+
+
+
+
 
 
 

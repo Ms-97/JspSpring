@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="com.jsp.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="java.lang.Appendable"/>
-<fullyQualifiedTypeName name="org.omg.PortableServer.RequestProcessingPolicy"/>
-<fullyQualifiedTypeName name="com.jsp.controller.HandlerMapper"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.RowBounds"/>
-<fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
 <fullyQualifiedTypeName name="com.jsp.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="com.jsp.command.PageMaker"/>
@@ -33,14 +26,12 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
-<fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
 <fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
 <fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
 <fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
@@ -50,14 +41,23 @@
 <fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="javax.activity.InvalidActivityException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.javassist.NotFoundException"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
+<fullyQualifiedTypeName name="com.jsp.command.CriteriaCommand"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
+<fullyQualifiedTypeName name="com.jsp.dto.BoardVO"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.jsp.service.NoticeService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
+<fullyQualifiedTypeName name="com.jsp.dto.NoticeVO"/>
 </qualifiedTypeNameHistroy>

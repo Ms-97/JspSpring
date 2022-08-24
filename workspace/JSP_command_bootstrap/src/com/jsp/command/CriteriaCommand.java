@@ -1,7 +1,5 @@
 package com.jsp.command;
 
-import com.sun.org.apache.regexp.internal.recompile;
-
 public class CriteriaCommand {
 	
 
@@ -39,10 +37,10 @@ public class CriteriaCommand {
 	public Criteria toCriteria() {
 		Criteria cri = new Criteria();
 		
-		if(page !=null && !page.isEmpty()) {
-			cri.setPage(Integer.parseInt(page));
-		}
-		if(perPageNum != null && !perPageNum.isEmpty()) {
+		if(page !=null && !page.isEmpty() ) {
+			cri.setPage(Integer.parseInt(page));				
+		}				
+		if(perPageNum !=null && !perPageNum.isEmpty()) {
 			cri.setPerPageNum(Integer.parseInt(perPageNum));
 		}
 		
@@ -52,3 +50,12 @@ public class CriteriaCommand {
 		return cri;
 	}
 }
+
+
+
+
+
+
+
+
+
