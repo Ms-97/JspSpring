@@ -75,6 +75,11 @@
     <!-- /.content -->
     
     <script>
+		window.onload=function(){
+			summernote_go($('textarea[name="content"]'),'<%=request.getContextPath()%>');	
+		}	
+	</script>
+    <script>
 	    function modifyPOST_go(){
 			 $("form[role='modifyForm']").submit();
 		 }    
