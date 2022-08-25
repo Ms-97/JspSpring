@@ -73,6 +73,14 @@
     </section>
 
 <script>
+
+	window.onload=function(){
+		$('textarea#content').summernote();
+	}
+	
+</script>
+
+<script>
 function regist_go(){
 
 	var form = document.registForm;
