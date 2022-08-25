@@ -20,7 +20,7 @@
 	</bean>
 	<bean id="boardService" class="com.jsp.service.BoardServiceImpl" >
 		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
-		<property name="boardDAO" ref-value="boardDAO" />
+		<property name="boardDAO" ref-value="boardDAO" />	
 	</bean>
 	
 </beans>

@@ -21,7 +21,6 @@
 <fullyQualifiedTypeName name="java.nio.file.attribute.FileTime"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
@@ -30,12 +29,6 @@
 <fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
-<fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
-<fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
-<fullyQualifiedTypeName name="com.jsp.controller.FileUploadResolver"/>
-<fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="javax.activity.InvalidActivityException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.javassist.NotFoundException"/>
@@ -48,7 +41,6 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
 <fullyQualifiedTypeName name="com.jsp.command.CriteriaCommand"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="com.jsp.dto.BoardVO"/>
 <fullyQualifiedTypeName name="com.jsp.dao.BoardDAO"/>
 <fullyQualifiedTypeName name="com.jsp.service.BoardService"/>
+<fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
+<fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.jsp.controller.FileUploadResolver"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
+<fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 </qualifiedTypeNameHistroy>
