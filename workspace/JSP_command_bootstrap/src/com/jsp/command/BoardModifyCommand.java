@@ -1,15 +1,15 @@
 package com.jsp.command;
 
+import java.util.Date;
+
 import com.jsp.dto.BoardVO;
 
 public class BoardModifyCommand {
 	
 	private String bno;          // 게시판번호
-	private String title="";     // 제목
-	private String writer;	  // 작성자 (회원)
-	private String content="";   // 내용 (html)
-	
-	
+	private String title;
+	private String writer;
+	private String content;
 	public String getBno() {
 		return bno;
 	}
@@ -35,19 +35,30 @@ public class BoardModifyCommand {
 		this.content = content;
 	}
 	
-	public BoardVO toBoardVO(){
+	public BoardVO toBoardVO() {
 		BoardVO board = new BoardVO();
 		
-		board.setBno(Integer.parseInt(this.bno));
-		board.setTitle(this.title);
-		board.setContent(this.content);
-		board.setWriter(this.writer);	
+		board.setBno(Integer.parseInt(bno));
+		board.setContent(content);
+		board.setTitle(title);
+		board.setWriter(writer);
+		board.setRegDate(new Date());
+		board.setViewcnt(0);
+		board.setUpdatedate(new Date());
 		
 		return board;
 		
 	}
 	
 }
+
+
+
+
+
+
+
+
 
 
 
