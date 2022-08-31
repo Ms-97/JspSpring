@@ -5,15 +5,14 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.josephoconnell.html.HTMLInputFilter;
 import com.jsp.action.Action;
 import com.jsp.command.Criteria;
 import com.jsp.command.PageMaker;
-import com.jsp.dto.ReplyVO;
+import com.jsp.command.ReplyRemoveCommand;
+import com.jsp.controller.HttpRequestParameterAdapter;
 import com.jsp.service.ReplyService;
 
-public class ReplyRegistAction implements Action {
+public class ReplyRemoveAction implements Action {
 	
 
 	private ReplyService replyService;
@@ -21,30 +20,30 @@ public class ReplyRegistAction implements Action {
 		this.replyService = replyService;
 	}
 	
-	
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url=null;
+		String url = null;
 		
-		ObjectMapper mapper = new ObjectMapper();
-		ReplyVO reply = mapper.readValue(request.getReader(), ReplyVO.class);
-		
-		// XSS
-		reply.setReplytext(HTMLInputFilter.htmlSpecialChars(reply.getReplytext()));
+		ReplyRemoveCommand removeCMD = HttpRequestParameterAdapter.execute(request,ReplyRemoveCommand.class);
 		
 		//DB
-		replyService.registReply(reply);
-
-		int replyTotalCount = replyService.getReplyListCount(reply.getBno());
+		replyService.removeReply(removeCMD.getRno());
+		
+		//page number		
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(new Criteria());
-		pageMaker.setTotalCount(replyTotalCount);
-		
+		pageMaker.setTotalCount(replyService.getReplyListCount(removeCMD.getBno()));
+
 		int realEndPage = pageMaker.getRealEndPage();
-		
+
+		int page=removeCMD.getPage();
+		if (page > realEndPage) {			
+			page = realEndPage;
+		}
+
 		PrintWriter out = response.getWriter();
-		out.print(realEndPage);
-		if(out!=null)out.close();
+		out.print(page);
+		out.close();
 		
 		return url;
 	}
