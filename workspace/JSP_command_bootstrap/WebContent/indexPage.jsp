@@ -200,7 +200,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </nav>	
       
  <div class="content-wrapper">
-     <iframe name="ifr" src="" frameborder="0" style="width:100%;height:85vh;"></iframe> 				
+     <iframe name="ifr" src="member/list.do" frameborder="0" style="width:100%;height:85vh;"></iframe> 				
   </div>
  
    
