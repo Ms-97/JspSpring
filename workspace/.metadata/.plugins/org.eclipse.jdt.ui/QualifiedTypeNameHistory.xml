@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.SecurityException"/>
-<fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.fastinfoset.sax.Properties"/>
 <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
@@ -19,7 +17,6 @@
 <fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="javax.activity.InvalidActivityException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.javassist.NotFoundException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -42,11 +39,8 @@
 <fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
 <fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.jsp.dao.ReplyDAO"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="com.jsp.command.PageMaker"/>
 <fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.jsp.service.MenuService"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MenuVO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 </qualifiedTypeNameHistroy>

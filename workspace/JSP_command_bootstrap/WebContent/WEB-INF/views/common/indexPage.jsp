@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
     
 <!DOCTYPE html>
 <!--
@@ -23,6 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   
   
   
+  
   <style>   
    	body { background:#292e33;}
   </style>
@@ -35,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="<%=request.getContextPath() %>/resources/bootstrap/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 	   
@@ -44,15 +46,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="" class="img-circle elevation-2" alt="User Image">
+          <img src="<%=request.getContextPath() %>/member/getPicture.do?id=${loginUser.id }" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
              <div class="row">
-		          <a href="" class="d-block" ></a>&nbsp;&nbsp;
-		          <button onclick="" class="btn btn-xs btn-primary col-xs-3 " type="button" >LOGOUT</button>
+		          <a href="javascript:OpenWindow('<%=request.getContextPath() %>/member/detail.do?id=${loginUser.id }','내정보','700','800');" class="d-block" >${loginUser.name }</a>&nbsp;&nbsp;
+		          <button onclick="location.href='common/logout.do';" class="btn btn-xs btn-primary col-xs-3 " type="button" >LOGOUT</button>
 	         </div>
-	         <a href="">tel :  </a><br/>
-           	<a href="">email :</a>
+	          <a href="tel:${loginUser.phone }">tel : ${loginUser.phone } </a><br/>
+           	<a href="mailto:${loginUser.email }">email : ${loginUser.email }</a>
         </div>
       </div>
 
@@ -74,6 +76,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
+       <c:forEach items="${menuList }" var="menu">
+	      <li class="nav-item d-none d-sm-inline-block">
+	      	<a href="javascript:subMenu_go('${menu.mcode }');goPage('${menu.murl}','${menu.mcode }');" class="nav-link"><i class="${menu.micon}"></i>&nbsp;${menu.mname }</a>
+	      </li>
+      </c:forEach>	
+    
     
     </ul>
 
@@ -200,7 +208,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </nav>	
       
  <div class="content-wrapper">
-     <iframe name="ifr" src="member/list.do" frameborder="0" style="width:100%;height:85vh;"></iframe> 				
+     <iframe name="ifr" src="" frameborder="0" style="width:100%;height:85vh;"></iframe> 				
   </div>
  
    
@@ -216,8 +224,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 </div>
 
-</body>
+ 
+<!-- jQuery -->
+<script src="<%=request.getContextPath()%>/resources/bootstrap/plugins/jquery/jquery.min.js" ></script>
+<!-- Bootstrap 4 -->
+<script src="<%=request.getContextPath()%>/resources/bootstrap/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="<%=request.getContextPath()%>/resources/bootstrap/dist/js/adminlte.min.js"></script>
+<!--summernote  -->
+<script src="<%=request.getContextPath() %>/resources/bootstrap/plugins/summernote/summernote-bs4.min.js"></script>
 
+<!-- common.js -->
+<script src="<%=request.getContextPath()%>/resources/js/common.js"></script>
+
+
+
+<%@ include file="./index_js.jsp" %>
+
+</body>
 </html> 
 
 

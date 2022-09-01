@@ -21,27 +21,26 @@ public class ExLoginAction implements Action {
 	
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url="redirect:/member/list.do";
+		String url="redirect:/index.do";
 		
 		//입력
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
 		String retUrl = request.getParameter("retUrl");
-		
-		
-		if(retUrl!=null) url="redirect:"+URLDecoder.decode(retUrl,"utf-8");
+				
+		if(retUrl!=null && !retUrl.isEmpty()) url="redirect:"+URLDecoder.decode(retUrl,"utf-8");
 		
 		try {
 			memberService.login(id, pwd);
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", memberService.getMember(id));
-			session.setMaxInactiveInterval(10);
+			session.setMaxInactiveInterval(15*60);
 		
 		} catch (NotFoundIdException | InvalidPasswordException e) {
 			//e.printStackTrace();
 			request.setAttribute("msg", e.getMessage());
-			request.setAttribute("retUrl", retUrl);
+			request.setAttribute("retUrl",retUrl);
 			url = "/common/login_fail";
 			
 		} catch (Exception e) {
@@ -49,7 +48,6 @@ public class ExLoginAction implements Action {
 			//Exceptin 처리
 			throw e;
 		}
-		
 		
 		return url;
 	}

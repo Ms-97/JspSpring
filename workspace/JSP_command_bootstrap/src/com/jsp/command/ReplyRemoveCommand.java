@@ -20,7 +20,6 @@ public class ReplyRemoveCommand {
 		return Integer.parseInt(page);
 	}
 	
-	
 	public int getBno() {
 		return Integer.parseInt(bno);
 	}
