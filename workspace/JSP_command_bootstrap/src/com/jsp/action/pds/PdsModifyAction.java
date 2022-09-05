@@ -31,6 +31,8 @@ public class PdsModifyAction implements Action {
 															   MAX_FILE_SIZE, 
 															   MAX_REQUEST_SIZE);
 
+		
+		
 		PdsVO pds = new PdsVO();
 		pds.setPno(Integer.parseInt(multi.getParameter("pno")));
 		pds.setWriter(multi.getParameter("writer"));

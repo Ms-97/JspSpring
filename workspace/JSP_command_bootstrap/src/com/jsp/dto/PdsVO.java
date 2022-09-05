@@ -1,6 +1,7 @@
 package com.jsp.dto;
 
 import java.util.Date;
+import java.util.List;
 
 public class PdsVO {
 	
@@ -11,6 +12,9 @@ public class PdsVO {
 	private int viewcnt;
 	private Date regDate;
 	private Date updatedate;
+	
+	
+	private List<AttachVO> attachList;
 	
 	
 	public int getPno() {
@@ -56,6 +60,13 @@ public class PdsVO {
 		this.updatedate = updatedate;
 	}
 	
+	
+	public List<AttachVO> getAttachList() {
+		return attachList;
+	}
+	public void setAttachList(List<AttachVO> attachList) {
+		this.attachList = attachList;
+	}
 	
 	
 }

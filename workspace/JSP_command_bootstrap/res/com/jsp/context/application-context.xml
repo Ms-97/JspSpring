@@ -12,11 +12,13 @@
 	<bean id = "replyDAO" class="com.jsp.dao.ReplyDAOImpl" />
 	<bean id = "menuDAO" class="com.jsp.dao.MenuDAOImpl" />	
 	<bean id = "pdsDAO" class="com.jsp.dao.PdsDAOImpl" />
+	<bean id = "attachDAO" class="com.jsp.dao.AttachDAOImpl" />
 			
 	<!-- Service -->
 	<bean id="pdsService" class="com.jsp.service.PdsServiceImpl" >
 		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
 		<property name="pdsDAO" ref-value="pdsDAO" />
+		<property name="attachDAO" ref-value="attachDAO" />	
 	</bean>	
 	<bean id="menuService" class="com.jsp.service.MenuServiceImpl">		
 		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />

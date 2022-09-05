@@ -75,16 +75,87 @@
 
 <script>
 	window.onload=function(){
-		summernote_go($('#content'),'<%=request.getContextPath()%>');		
+		summernote_go($('#content'),'<%=request.getContextPath()%>');	
+		
+		
+		$('.fileInput').on('change','input[type="file"]',function(event){
+			//alert(this.files[0].size);
+			if(this.files[0].size>1024*1024*40){
+	 			alert("파일 용량이 40MB를 초과하였습니다.");	 			
+	 			$(this).focus();
+	 			$(this).click();
+	 			this.value="";	 					
+	 			return false;
+	 		} 
+		});
 	}	
 </script>    
 
 
 <script>
 function regist_go(){
+	
+	var files = $('input[name="uploadFile"]');
+	for(var file of files){
+		console.log(file.name+" : "+file.value);
+		if(file.value==""){
+			alert("파일을 선택하세요.");
+			file.focus();
+			file.click();
+			return;
+		}
+	}	
+	
+	if($("input[name='title']").val()==""){ //form.title.value
+		alert("제목은 필수입니다.");
+		$("input[name='title']").focus();
+		return;
+	}
+	
+	
 	$("form[role='form']").submit()
 }
 
+
+var dataNum=0;
+
+function addFile_go(){
+	//alert("click add btn");
+	
+
+	if($('input[name="uploadFile"]').length >=5){
+		alert("파일추가는 5개까지만 가능합니다.");
+		return;
+	}
+	
+	var div=$('<div>').addClass("inputRow").attr("data-no",dataNum);
+	var input=$('<input>').attr({"type":"file","name":"uploadFile"}).css("display","inline");
+	
+	var button="<button onclick='remove_go("+dataNum+");' style='border:0;outline:0;' class='badge bg-red' type='button'>X</button>";
+	
+	div.append(input).append(button);
+	$('.fileInput').append(div);
+	
+	
+	dataNum++;
+}
+
+function remove_go(dataNum){
+	$('div[data-no="'+dataNum+'"]').remove();
+}
 </script>    
  </body>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
