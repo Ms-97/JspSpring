@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
@@ -17,19 +15,15 @@
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.jsp.service.NoticeService"/>
 <fullyQualifiedTypeName name="com.jsp.dto.NoticeVO"/>
 <fullyQualifiedTypeName name="com.jsp.dto.BoardVO"/>
 <fullyQualifiedTypeName name="com.jsp.dao.BoardDAO"/>
 <fullyQualifiedTypeName name="com.jsp.service.BoardService"/>
-<fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
 <fullyQualifiedTypeName name="com.jsp.exception.NotMultipartFormDataException"/>
 <fullyQualifiedTypeName name="com.jsp.controller.FileUploadResolver"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
 <fullyQualifiedTypeName name="com.jsp.dao.ReplyDAO"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
 <fullyQualifiedTypeName name="com.jsp.dto.ReplyVO"/>
@@ -50,14 +44,20 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="com.jsp.dto.PdsVO"/>
 <fullyQualifiedTypeName name="javax.el.ELException"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="com.jsp.controller.GetUploadPath"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.jsp.dao.AttachDAO"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.jsp.controller.MakeFileName"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.jsp.dto.AttachVO"/>
+<fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
 </qualifiedTypeNameHistroy>

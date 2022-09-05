@@ -81,9 +81,8 @@
 		$('.fileInput').on('change','input[type="file"]',function(event){
 			//alert(this.files[0].size);
 			if(this.files[0].size>1024*1024*40){
-	 			alert("파일 용량이 40MB를 초과하였습니다.");	 			
-	 			$(this).focus();
-	 			$(this).click();
+	 			alert("파일 용량이 40MB를 초과하였습니다.");
+	 			this.click();
 	 			this.value="";	 					
 	 			return false;
 	 		} 
