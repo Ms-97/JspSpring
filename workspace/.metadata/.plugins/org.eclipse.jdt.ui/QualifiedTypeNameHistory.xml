@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-<fullyQualifiedTypeName name="com.jsp.command.MemberRegistCommand"/>
-<fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
-<fullyQualifiedTypeName name="org.apache.catalina.connector.OutputBuffer"/>
-<fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings"/>
-<fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="javax.activity.InvalidActivityException"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.javassist.NotFoundException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
@@ -33,12 +23,10 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.jsp.service.MenuService"/>
 <fullyQualifiedTypeName name="com.jsp.dto.MenuVO"/>
-<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
 <fullyQualifiedTypeName name="com.jsp.service.PdsService"/>
 <fullyQualifiedTypeName name="com.jsp.command.CriteriaCommand"/>
 <fullyQualifiedTypeName name="com.jsp.controller.HttpRequestParameterAdapter"/>
-<fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
@@ -53,11 +41,23 @@
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.jsp.controller.MultipartHttpServletRequestParser"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.jsp.dto.AttachVO"/>
 <fullyQualifiedTypeName name="com.jsp.controller.FileDownloadResolver"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.test.annotation.Rollback"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.jsp.command.Criteria"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.jsp.dto.MemberVO"/>
+<fullyQualifiedTypeName name="com.jsp.service.MemberService"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="sun.java2d.pipe.SpanClipRenderer"/>
 </qualifiedTypeNameHistroy>
