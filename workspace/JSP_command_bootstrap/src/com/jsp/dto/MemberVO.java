@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class MemberVO {
 	
+	
 	private String id;  //아이디
 	private String pwd; //패스워드
 	private String name="---"; //이름
