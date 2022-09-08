@@ -4,4 +4,7 @@
 <typeInfo handle="=servlet_basic/src&lt;com.java.basic{Output.java[Output" modifiers="513" timestamp="1657699273241"/>
 <typeInfo handle="=JSP_command_bootstrap/src&lt;com.jsp.dao{MenuDAO.java[MenuDAO" modifiers="513" timestamp="1662083967463"/>
 <typeInfo handle="=JSP_command_bootstrap/src&lt;com.jsp.action{Action.java[Action" modifiers="513" timestamp="1662343351982"/>
+<typeInfo handle="=spring_bootstrap/D:\/A_TeachingMaterial\/6.JspSpring\/workspace\/spring_bootstrap\/src\/main\/webapp\/WEB-INF\/lib\/JSP_command_bootstrap.jar&lt;com.jsp.dao(MemberDAO.class[MemberDAO" modifiers="1537" timestamp="1662453421549"/>
+<typeInfo handle="=spring_bootstrap/D:\/A_TeachingMaterial\/6.JspSpring\/workspace\/spring_bootstrap\/src\/main\/webapp\/WEB-INF\/lib\/JSP_command_bootstrap.jar&lt;com.jsp.dao(PdsDAO.class[PdsDAO" modifiers="1537" timestamp="1662453421549"/>
+<typeInfo handle="=spring_bootstrap/D:\/A_TeachingMaterial\/6.JspSpring\/workspace\/spring_bootstrap\/src\/main\/webapp\/WEB-INF\/lib\/JSP_command_bootstrap.jar&lt;com.jsp.service(NoticeService.class[NoticeService" modifiers="1537" timestamp="1662453421549"/>
 </typeInfoHistroy>

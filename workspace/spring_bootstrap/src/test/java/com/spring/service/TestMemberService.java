@@ -16,7 +16,7 @@ import com.jsp.dto.MemberVO;
 import com.jsp.service.MemberService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:com/spring/context/root-context.xml")
+@ContextConfiguration("classpath:kr/or/ddit/context/root-context.xml")
 public class TestMemberService {
 
 	@Resource(name = "memberService")
@@ -38,7 +38,7 @@ public class TestMemberService {
 		if(memberList!=null) for(MemberVO member : memberList)
 			System.out.println(member);
 		
-		Assert.assertEquals(5, memberList.size());
+		Assert.assertEquals(3, memberList.size());
 	}
 
 }
