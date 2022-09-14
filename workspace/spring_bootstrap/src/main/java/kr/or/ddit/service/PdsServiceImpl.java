@@ -56,7 +56,7 @@ public class PdsServiceImpl implements PdsService {
 		addAttachList(pds);
 		
 		
-		if(pds!= null && pds.getAttachList()!=null) {
+		if(pds!=null && pds.getAttachList()!=null) {
 			for(AttachVO attach:pds.getAttachList()) {
 				String originalFileName 
 					= MakeFileName.parseFileNameFromUUID(attach.getFileName(), "\\$\\$");
@@ -66,7 +66,7 @@ public class PdsServiceImpl implements PdsService {
 		
 		return pds;
 	}
-				
+
 	@Override
 	public void regist(PdsVO pds) throws SQLException {
 

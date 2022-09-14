@@ -31,7 +31,7 @@ public class NoticeServiceImpl implements NoticeService {
 
 		// 전체 board 개수
 		int totalCount = noticeDAO.selectSearchNoticeListCount(cri);
-
+		
 		// PageMaker 생성.
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
