@@ -7,8 +7,7 @@ import com.jsp.dto.PdsVO;
 public class PdsModifyCommand extends PdsRegistCommand{
 
 	private int pno;
-	private List<String> deleteFile;
-	
+	private List<Integer> deleteFile;
 	
 	public int getPno() {
 		return pno;
@@ -16,13 +15,16 @@ public class PdsModifyCommand extends PdsRegistCommand{
 	public void setPno(int pno) {
 		this.pno = pno;
 	}
-	public List<String> getDeleteFile() {
+	public List<Integer> getDeleteFile() {
 		return deleteFile;
 	}
-	public void setDeleteFile(List<String> deleteFile) {
+	public void setDeleteFile(List<Integer> deleteFile) {
 		this.deleteFile = deleteFile;
 	}
-	
+
+
+
+
 	@Override
 	public PdsVO toPdsVO(){
 		PdsVO pds = super.toPdsVO();

@@ -112,12 +112,13 @@
     </section> 
 
 <c:if test="${from eq 'regist'}" >
-	<script>
-		alert("공지사항 등록이 성공했습니다.");
-		window.close();
-		window.opener.location.reload();	
-	</script>
+<script>
+   	alert("공지사항 등록이 성공했습니다.");
+   	window.opener.location.reload();	
+   	window.close();
+</script>
 </c:if>
+    
 
 
 
