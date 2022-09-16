@@ -24,15 +24,16 @@
  	/>
  			 	            
 	<!-- 인증 -->
-	<authentication-manager>
+	<authentication-manager id="auth">
 		<authentication-provider ref="customAuthenticationProvider" />
 	</authentication-manager>
 	            
-	<!-- 인허가 -->
+	<!-- 인허가 -->	
 	<http pattern="/resources/**" security="none" />
-	<http use-expressions="true" pattern="/**" >
+	<http use-expressions="true" pattern="/**" authentication-manager-ref="auth">
 		<access-denied-handler error-page="/security/accessDenied" />
 		
+			
 		<intercept-url pattern="/**/regist*" access="hasAnyRole('ROLE_ADMIN,ROLE_MANAGER')" />
 		<intercept-url pattern="/**/modify*" access="hasRole('ROLE_ADMIN')" />
 		<intercept-url pattern="/**/stop*" access="hasRole('ROLE_ADMIN')" />

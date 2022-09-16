@@ -30,6 +30,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 		
 		
 		try {
+			
 			memberService.login(login_id, login_pwd);
 			
 			MemberVO member = memberService.getMember(login_id);

@@ -83,7 +83,7 @@ public class CommonController {
 		
 		String url="security/sessionOut";
 		
-		model.addAttribute("message","다른 장치에서 로그인 되었습니다.\\n로그아웃 합니다!");
+		model.addAttribute("message","다른 장치에서 로그인이 되었습니다.\\n로그아웃 합니다!");
 		return url;
 	}
 	
